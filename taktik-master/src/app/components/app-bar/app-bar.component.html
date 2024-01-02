@@ -1,0 +1,76 @@
+<!-- from desktop -->
+<div class="nav" *ngIf="getScreenWidth >= 922">
+  <div class="btns">
+    <div class="btns-row">
+      <a class="nav-btn logged-in" i18n>مرحبا أحمد</a>
+      <a class="nav-btn log-out" i18n>تسجيل الخروج</a>
+    </div>
+    <div class="btns-row">
+      <a class="nav-btn" i18n>الرئيسية</a>
+      <a class="nav-btn" i18n>السوق الاعلامي</a>
+      <a class="nav-btn" i18n>الدورات التدريبية</a>
+      <a class="nav-btn" i18n>النقل المباشر</a>
+      <a class="nav-btn" i18n>عن تكتيك</a>
+      <a class="nav-btn" i18n>التوظيف</a>
+      <a class="nav-btn" i18n>اتصل بنا</a>
+    </div>
+  </div>
+  <div class="logo-col">
+    <!-- <img src="#" alt="تكتيك"> -->
+    <h2>تكتيك</h2>
+  </div>
+</div>
+
+<!-- until desktop -->
+
+<div class="nav-mobile" *ngIf="getScreenWidth <= 921">
+  <div class="visable-all">
+    <div class="menu-box" (click)="opened = !opened">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example menu icon"
+        fontIcon="menu"
+        class="menu"
+      ></mat-icon>
+    </div>
+    <div class="logo-col">
+      <!-- <img src="#" alt="تكتيك"> -->
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon>
+    </div>
+  </div>
+
+  <div class="act-nav-mobile" *ngIf="opened">
+    <div class="sub-nav">
+      <div class="sub-nav-vis">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="power_settings_new"
+        ></mat-icon>
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example menu icon"
+          fontIcon="menu"
+          class="menu"
+          (click)="sub_opened = !sub_opened"
+        ></mat-icon>
+      </div>
+      <div *ngIf="sub_opened" >
+        <hr />
+        <div class="sub-nav-links">
+          <a class="nav-btn sub" i18n>الرئيسية</a>
+          <a class="nav-btn sub" i18n>السوق الاعلامي</a>
+          <a class="nav-btn sub" i18n>الدورات التدريبية</a>
+          <a class="nav-btn sub" i18n>النقل المباشر</a>
+          <a class="nav-btn sub" i18n>عن تكتيك</a>
+          <a class="nav-btn sub" i18n>التوظيف</a>
+          <a class="nav-btn sub" i18n>اتصل بنا</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

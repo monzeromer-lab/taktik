@@ -1,0 +1,20 @@
+app-articals {
+    width: 100%;
+}
+
+app-catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 85%;
+}
+
+@media (max-width: 921px) {
+    app-catalog {
+    
+        height: 95%;
+    }
+
+}

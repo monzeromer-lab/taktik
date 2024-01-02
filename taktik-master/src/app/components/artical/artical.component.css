@@ -1,0 +1,153 @@
+.artical {
+    display: flex;
+    box-sizing: border-box;
+    /* padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 10px; */
+    /* flex-direction: row; */
+    width: 100%;
+    height: 100%;
+
+    color: black;
+
+    /* margin: 5px; */
+}
+
+.righty-artical {
+    flex-direction: row;
+}
+
+.lefty-artical {
+
+    flex-direction: row-reverse;
+}
+
+.artical-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    /* height: 80%; */
+
+    text-align: start;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    height: 70%;
+    margin: 8px;
+}
+
+.text {
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.artical-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+.image-box {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.image {
+    /* max-height: 90%;
+    max-width: 50%; */
+    width: 100%;
+    height: 99%;
+    /* border-radius: 12px; */
+    /* vertical-align: middle;
+    display: inline-block; */
+}
+
+.text {
+    margin: 0;
+}
+
+@media (max-width: 921px) {
+    .artical {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .artical-text {
+        align-items: center;
+    }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 100%;
+    }
+
+    .artical-image {
+        width: 100%;
+    }
+
+    .image {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+}
+
+.learn-btn {
+    background-color: #23A49F;
+    color: white;
+
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+
+
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-text {
+    text-align: center;
+    text-decoration: none;
+}
+.link-text:visited {
+    color: white;
+}

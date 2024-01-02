@@ -1,0 +1,6 @@
+.articals {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    width: 100%;
+}

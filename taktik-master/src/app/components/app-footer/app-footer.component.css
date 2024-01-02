@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  font-size: medium;
+  font-family: "Cairo", sans-serif;
+  font-family: "Lexend", sans-serif;
+  font-family: "Rubik", sans-serif;
+  /* background-color: white; */
+  color: black;
+  padding: 5px;
+}

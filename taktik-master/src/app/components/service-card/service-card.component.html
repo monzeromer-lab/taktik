@@ -1,0 +1,30 @@
+<div *ngFor="let serviceCard of serviceCards" class="mb-4 p-4 border cursor-pointer w-full service-card" (click)="selectServiceCard(serviceCard)">
+    <h2 class="text-lg font-bold mb-2">{{ serviceCard.title }}</h2>
+    <p class="text-gray-600">{{ serviceCard.description }}</p>
+    <img [src]="serviceCard.image" alt="{{ serviceCard.title }}" class="mt-2">
+  </div>
+  
+  <div *ngIf="selectedServiceCard">
+    <h1 class="text-2xl font-bold mb-4">{{ selectedServiceCard.title }}</h1>
+  
+    <div *ngIf="currentStep === 1">
+      <!-- Step 1: Personal Information -->
+      <!-- Add Tailwind classes for styling -->
+      <h2 class="text-lg font-bold mb-2">Step 1: Personal Information</h2>
+      <!-- ... (same as previous example) -->
+    </div>
+  
+    <div *ngIf="currentStep === 2">
+      <!-- Step 2: Payment -->
+      <!-- Add Tailwind classes for styling -->
+      <h2 class="text-lg font-bold mb-2">Step 2: Payment</h2>
+      <!-- ... (same as previous example) -->
+    </div>
+  
+    <div *ngIf="currentStep === 3">
+      <!-- Step 3: Confirmation -->
+      <!-- Add Tailwind classes for styling -->
+      <h2 class="text-lg font-bold mb-2">Step 3: Confirmation</h2>
+      <!-- ... (same as previous example) -->
+    </div>
+  </div>

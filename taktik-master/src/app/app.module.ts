@@ -12,17 +12,16 @@ import { MediaQueryPipe } from './shared/MediaQueryPipe'
 import { BrefsModule } from './modules/brefs/brefs.module';
 import { VideoPresentationComponent } from "./components/video-presentation/video-presentation.component";
 import { BrefComponent } from './components/bref/bref.component';
-import { ServiceBtnComponent } from './components/service-btn/service-btn.component';
 import { AppFooterComponent } from './components/app-footer/app-footer.component';
-import { ServicesComponent } from './components/services/services.component';
 import { ArticalsComponent } from './components/articals/articals.component';
 import { CatalogComponent } from './components/catalog/catalog.component';
-
+import { ServiceCardComponent } from './components/service-card/service-card.component';
 @NgModule({
     declarations: [
         MediaQueryDirective,
         MediaQueryPipe,
-        AppComponent
+        AppComponent,
+        ServiceCardComponent
     ],
     providers: [AuthService],
     bootstrap: [AppComponent],
@@ -41,11 +40,9 @@ import { CatalogComponent } from './components/catalog/catalog.component';
         }),
         VideoPresentationComponent,
         BrefComponent,
-        ServiceBtnComponent,
         AppFooterComponent,
-        ServicesComponent,
         ArticalsComponent,
-        CatalogComponent
-    ]
+        CatalogComponent,
+        ]
 })
 export class AppModule { }

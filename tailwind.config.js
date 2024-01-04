@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["C:\Users\RealA\Downloads\taktik-master\taktik-master\src\app\app.component.{html,ts}"],
+  content: ["./src/**/*{.ts, .tsx, .js, .jsx}}"],
   theme: {
     extend: {},
   },
